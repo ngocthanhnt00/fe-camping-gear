@@ -1,0 +1,284 @@
+[
+  {
+    "_id": {
+      "$oid": "66a5209b0c3dad28eb54e838"
+    },
+    "name": "Mặt bàn nhôm cho xe kéo TC02 Naturehike PNH22JU001",
+    "brand": "Naturalhike",
+    "img": "MatBan.png",
+    "star": 4,
+    "priceNew": 2560000,
+    "priceOld": 1354000,
+    "quantity": 16,
+    "description": "Mặt bàn nhôm cho xe kéo TC02 Naturehike PNH22JU001 là một sản phẩm rất tiện dụng cho các chuyến đi cắm trại, du lịch hay các hoạt động ngoài trời khác. Với chất liệu bằng nhôm, mặt bàn này rất nhẹ và chắc chắn, có khả năng chịu lực tốt, dễ dàng mang theo và lắp đặt với xe kéo TC02 tạo thêm một bề mặt để tải thêm đồ hoặc sử dụng làm một chiếc bàn ăn dã ngoại, chất liệu nhôm giả gỗ đẹp mắt nhưng cũng rất nhẹ nhàng có thể xếp gọn cực kì tiện lợi",
+    "masp": "matban",
+    "hot": 1,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d340"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66a524a48daf013404140164"
+    },
+    "name": "Bếp gas cắm trại đa năng Naturehike CNH22CJ007",
+    "brand": "Maxfox",
+    "img": "bep.png",
+    "star": 3,
+    "priceNew": 1692000,
+    "priceOld": 2350000,
+    "quantity": 20,
+    "description": "Bếp gas cắm trại đa năng Naturehike CNH22CJ007 – một chiếc bếp nướng gas mới đến từ thương hiệu Naturehike cung cấp một bữa ăn nướng ngoài trời nhanh chóng, sang trọng, sạch sẽ và có thể linh hoạt thay đổi sang bếp lẩu tiện lợi không cần phải nhóm lửa. \nNhiệt lượng bếp lên đến 2300W đạt chuẩn công năng nấu nướng tốt nhất hiện nay, lửa được trải đều 2 bên cạnh bếp giúp làm nóng đều khay nướng, khay lẩu,.. Bếp sử dụng bình gas mini đa dụng dễ dàng tìm mua ở bất kì đâu.",
+    "masp": "bepgas",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d340"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66a526748daf01340414016b"
+    },
+    "name": "BỘ KỀM-DỤNG CỤ ĐA NĂNG GERBER MULTI-PLIER 400 BLACK WITH SHEATH - 22-45509",
+    "brand": "Gerber gear",
+    "img": "kiem.png",
+    "star": 2,
+    "priceNew": 0,
+    "priceOld": 2050000,
+    "quantity": 20,
+    "description": "Với kềm đa năng/ dụng cụ đa năng cuộc sống sẽ trở nên đơn giản và thú vị. Từ những chuyến cắm trại, dã ngoại, đến những công việc sửa chữa trong nhà thì bộ kềm-dụng cụ đa năng Gerber multi-plier 400 black đều có thể giải quyết dễ dàng và nhanh chóng!\n9 chức năng\nBộ kềm đa năng Gerber compact sport multi plier 400 là dòng sản phẩm rất phổ biến của Gerber.\nKích thước nhỏ gọn, nhẹ, đa chức năng\nKềm được thiết kế dạng trượt, có thể mở kềm chỉ bằng 1 tay",
+    "masp": "kemdanang",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d346"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66a528518daf01340414016f"
+    },
+    "name": "SUP BƠM HƠI AQUA MARINA HYPER, 11.6 FEET - BT-19HY01",
+    "brand": "Aqua maria",
+    "img": "supblue.png",
+    "star": 3,
+    "priceNew": 0,
+    "priceOld": 9920000,
+    "quantity": 20,
+    "description": "SUP bơm hơi, ván chèo đứng - thứ không thể thiếu cho môn thể thao dưới nước: Chèo thuyền bơm hơi, Kayak. SUP bơm hơi Aqua Marina Hyper, 11.6 feet - ván chèo đứng nằm trong dòng Touring của AquaMarina là một gợi ý nếu bạn là người mới bắt đầu!\n\nỨng dụng công nghệ drop stitch cho 2 lớp vật liệu nhằm đảm bảo độ chắc chắn, chịu được áp suất cao của SUP\n\"Double Chamber Technology\" - Công nghệ buồng đôi giúp đảm bảo an toàn, hạn chế tối thiểu rủi ro khi sử dụng SUP",
+    "masp": "sup",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d347"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66a529d68daf013404140173"
+    },
+    "name": "CAMERA HÀNH TRÌNH THỂ THAO XIAOMI ACTION 4K",
+    "brand": "Xiaomi",
+    "img": "gopro1.png",
+    "star": 5,
+    "priceNew": 5200000,
+    "priceOld": 7000000,
+    "quantity": 20,
+    "description": "Chính hãng Xiaomi\n- Digiworld\n- Bản Quốc tế giao diện tiếng Anh chính hãng Digiworld phân phối. \n- Camera nhỏ gọn, thích hợp cho các hoạt động dã ngoại, cắm trại.\n- Trang bị chống rung 6 trục, với hiệu năng hạn chế rung như trên Gimbal chuyên nghiệp, cho chất lượng hình ảnh mượt mà ổn định.\n- Chip xử lý ảnh thế hệ mới Ambarella A12S75 và Cảm biến Sony IMX 317 cho dù ban đêm vẫn quay phim chụp ảnh bình thường.\n- Bên cạnh đó với cảm biến 8MP bạn có thể chụp ảnh liên tục 10fps và lưu file định dạng Raw chuyên nghiệp\n- Được trang bị màn hình cảm ứng 2.4-inch giúp bạn xem nhanh lại các clip đã quay, thao tác cài đặt được nhanh hơn và trực quan hơn.\n- Có hỗ trợ Wifi 2.4 GHz và bluetooth V4.1 giúp người dùng kết nối với điện thoại, remote,.. một cách dễ dàng và nhanh chóng.\n- Hỗ trợ thẻ nhớ: Micro SD (max 64Gb).\nMàu: Đen\nKích thước: 71.5 x 42.7 x 29.5 mm\nKhối lượng: 99g\nBảo hành: 12 tháng.",
+    "masp": "camera",
+    "hot": 1,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d345"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66afa5431b22f104fb126f83"
+    },
+    "name": "Giày leo núi, Trekking (tổng hợp)",
+    "brand": "Hanagal",
+    "img": "giayleonui.webp",
+    "star": 5,
+    "priceNew": 0,
+    "priceOld": 850000,
+    "quantity": 120,
+    "description": "Chính hãng HANAGAL được FANFAN phân phối độc quyền tại Việt Nam.Mẫu Swift được HANAGAL thiết kế riêng cho thị trường nhiệt đới nóng ẩm, nhiều sông suối như Việt Nam, là bản nâng cấp của Otarriinae. Với công nghệ thoát nước và nhanh khô kế thừa từ Otarriinae đảm bảo là lựa chọn xứng đáng nhất cho những chuyến chinh phục hang động, đi rừng, lội suối.Đế giày được thiết kế đặc biệt với hệ thống lỗ thoát nước từ bên trong giày ra bên ngoài, đảm bảo đôi giày sẽ không giữ nước mà đẩy hết ra ngoài. Chất liệu chủ đạo là PU+Breathable mesh thông thoáng giúp đôi giày khô rất nhanh khi bị ướt.Kiểu dáng, form giày thiết kế ôm chân, trẻ trung và thể thao, khó mà phân biệt được giữa một đôi giày thể thao thời trang và đôi Swift chuyên dụng cho dân đi hang động",
+    "masp": "giayleonui",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d343"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66afa6d9610f465dd481dc85"
+    },
+    "name": "Mũ bảo hiểm 3/4 ANDES 382 NHÁM CHÍNH HÃNG tesssttttttttt",
+    "brand": "Andes helmet",
+    "img": "mubaohiem.png",
+    "star": 2,
+    "priceNew": 370000,
+    "priceOld": 370000,
+    "quantity": 540,
+    "description": "Mũ bảo hiểm đi phượt trở thành món đồ không thể thiếu của những ai yêu thích di chuyển bằng xe máy. Andes - thương hiệu Việt Nam với những dòng nón bảo hiểm chất lượng đã mang đến dòng sản phẩm nón bảo hiểm 3/4 Andes 382 với kiểu dáng trẻ trung, cá tính cho một thế hệ đi phượt văn minh. Là phiên bản nâng cấp của Andes 111 Có thêm tính năng 3S nổi tiếng của Andes giúp người dùng dễ dàng tháo lắp lớp nón bên trong, dễ dàng vệ sinh giúp nón luôn sạch không bị ngứa khi đội Lớp vải bọc trong dạng lưới tạo khe cho gió luồn vào trong nón không gây cảm giác hầm nóng khi tham gia giao thông Chất liệu nhựa ABS cao cấp độ bền rất cao",
+    "masp": "mubaohiem",
+    "hot": 1,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d345"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66afa7c9610f465dd481dc98"
+    },
+    "name": "Túi đựng đồ camping cắm trại xếp gọn Naturehike",
+    "brand": "Naturalhike",
+    "img": "fanfan-tui-dung-do-cam-trai-xep-gon-naturehike-nh21snx04-__1__1902a1bb582f4d019dcd39c5dd61fd6f_large.webp",
+    "star": 4,
+    "priceNew": 0,
+    "priceOld": 347000,
+    "quantity": 251,
+    "description": "Túi đựng đồ cắm trại xếp gọn Naturehike NH21SNX04 - Mẫu túi đựng đồ dã ngoại, cắm trại với ưu điểm cứng cáp, chắc chắn và chuyên dụng, đem đến một không gian để đồ rộng, có quai xách và khả năng xếp gọn khi không dùng đến như những món đồ cắm trại khác. Sử dụng túi để sắp xếp gọn gàng từ dụng cụ cắp trại, đồ dùng bếp, hay áo quần, thức ăn,... Bên trong túi được chia ngăn và quanh túi trang bị những ngăn nhỏ và giá molle để bạn có thêm không gian để đồ, sắp xếp đồ hợp lý hơn.",
+    "masp": "tuidungdo",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d340"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66afa8dc610f465dd481dca8"
+    },
+    "name": "Lều glamping 3-4 người lục giác kim tự tháp BlackDog BD-ZP003",
+    "brand": "BlackDog",
+    "img": "leublackdog.webp",
+    "star": 4,
+    "priceNew": 4760000,
+    "priceOld": 3100000,
+    "quantity": 19,
+    "description": "Lều glamping 3-4 người lục giác kim tự tháp BlackDog BD-ZP003 - Mẫu lều Glamping chính hãng cao cấp với màu đen chủ đạo cho một không gian cắm trại huyền bí, thú vị. Lều được thiết kế theo phong cách kim tự tháp với phần đáy rộng cho bạn thỏa sức sắp đặt, derco vật dụng bên trong lều, đỉnh tháp cao cho một không gian bên trong rộng rãi, thoải mái. Với chiều cao 2m giúp bạn có thể ra vào lều và sinh hoạt trong lều một cách thoải mái mà không cần phải khom người.",
+    "masp": "leuglamping",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d340"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66afaa0a610f465dd481dcbc"
+    },
+    "name": "LỀU 4 NGƯỜI MADFOX SIÊU KHÁNG NƯỚC TREKKER 4 2022",
+    "brand": "Maxfox",
+    "img": "leucamtrai4nguoi.png",
+    "star": 5,
+    "priceNew": 0,
+    "priceOld": 2490000,
+    "quantity": 20,
+    "description": "Nổi bật với thiết kế cửa có thể mở thành mái hiên tiện lợi - Lều 4 người Madfox Trekker 4 2022 được tối ưu diện tích sử dụng với 2 mái hiên có thể được tạo ra bởi 2 cửa đối diện nhau. Là mẫu lều dã ngoại, cắm trại dành thích hợp cho những chuyến đi cùng gia đình, bạn bè. Chất liệu: Lớp trong: hơn 80% là lưới thoáng mát Lớp ngoài: 210T Ripstop Polyester PU coated Lều sử dụng khung bằng nhôm 7001 rất nhẹ, độ đàn hồi tốt, hạn chế cong Bộ cọc lều cũng bằng nhôm cao cấp, chắc chắn Thiết kế: Chống mưa: 3.000 mm Các đường may được xử lý ép seam chống thấm nước Phía trên nóc 2 bên hông lều thiết kế cửa thông gió đảm bảo thông thoáng, và hạn chế đọng sương khi sử dụng ở môi trường có độ ẩm cao Lớp trong được thiết kế đa phần là lưới mắt nhỏ giúp ngăn côn trùng, đồng thời đảm bảo thông thoáng Sử dụng khung bằng nhôm 7001 rất nhẹ, độ đàn hồi tốt, hạn chế cong Thiết kế 2 cửa đối diện nhau giúp người trong lều dễ dàng di chuyển ra ngoài. 2 cửa có thể dựng lên thành 2 mái hiên, có thể sử dụng cho sinh hoạt, ăn uống nhóm nhỏ. (Sào chống mái hiên KHÔNG được đi kèm) Lớp lều bên trong thiết kế full clip hook (không cần xỏ khung trước khi dựng) Bộ cọc lều cũng bằng nhôm cao cấp, chắc chắn",
+    "masp": "leu4nguoi",
+    "hot": 1,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d340"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66afab5c610f465dd481dccc"
+    },
+    "name": "Bếp gas cắm trại xếp gọn MS-200DF",
+    "brand": "Maxsun",
+    "img": "bepga.webp",
+    "star": 3,
+    "priceNew": 1266500,
+    "priceOld": 1266500,
+    "quantity": 211,
+    "description": "Bếp Gas Dã Ngoại MS-200DF với thiết kế thông minh, có thể xếp gọn và điều chỉnh độ cao chân bếp theo nhu cầu sử dụng, linh hoạt di động. Với mục đích mang lại những bữa ăn hấp dẫn, nóng hổi và đầy dinh dưỡng cho các hoạt động giải trí ngoài trời: leo núi, cắm trại, du lịch, phượt, dã ngoại… giúp việc nấu nướng trở nên thuận tiện và chủ động. Thông số kỹ thuật: Thương hiệu: Maxsun (Hàn Quốc) Model: MS-200DF Công Suất: 2.4 kW Kích thước: 305x203x120 mm Trọng lượng: 1.89 kg Gas sử dụng: Bình gas dã ngoại Max Camping hoặc có thể sử dụng bình Max CRV cùng với đầu chuyển Bảo hành: 1 năm",
+    "masp": "bepgasmaxsun",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d346"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66afacb3610f465dd481dcd8"
+    },
+    "name": "Ba lô leo núi Vultura Moab Jam 34 New",
+    "brand": "Vultura",
+    "img": "baloleonui.png",
+    "star": 4,
+    "priceNew": 590000,
+    "priceOld": 699000,
+    "quantity": 42,
+    "description": "Ba lô leo núi Vultura Moab Jam 30L là là loại ba lô leo núi chuyện dụng thích hợp cho chuyến đi 2-3 ngày. Balo được trang bị đầy đủ các đai trợ lực và đai cố định giúp phân tán đều trọng lượng của balo lên cơ thể, giảm áp lực lên vai  đảm bảo thể lực cho bạn trong suốt chuyến đi.\n\nDòng ba lô leo núi đa năng (có thể sử dụng như ba lô thường) kích thước nhỏ gọn và rất nhẹ nhàng\nThiết kế 2 cửa lấy đồ phía trên và dưới bụng ba lô. Ngăn phụ nhỏ và ngăn phụ ở đai trợ lực để chứa thêm đồ.\nĐầy đủ hệ thống trợ lực, phân tán trọng lực và đệm lưng ACS\nThiết kế quai liền với tiết diện lớn, chắc chắn và được trang bị xốp đệm êm.",
+    "masp": "baloleonui",
+    "hot": 0,
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d344"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66b04a15126556cd5db89bd1"
+    },
+    "name": "HI hi11111111111111nnnnnnnnnnnnsssssssssssssss",
+    "brand": "NaturalHikess",
+    "img": "homie.jpg",
+    "star": 3,
+    "priceNew": 13000,
+    "priceOld": 13000,
+    "quantity": 999,
+    "hot": 0,
+    "description": "tétttt",
+    "categoryId": {
+      "$oid": "66efe9a920ba8df9aae3776d"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66f4eec26611255771c8e1a6"
+    },
+    "name": "Lều Cắm trại test33333",
+    "brand": "Maxfox",
+    "img": "InvertLogo.png",
+    "star": 3,
+    "priceNew": 1000,
+    "priceOld": 1200,
+    "quantity": 12,
+    "hot": 1,
+    "description": "Day la mo ta san pham",
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d347"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "670df5ff412795449a737215"
+    },
+    "name": "Lều Cắm trại test",
+    "brand": "Maxfox",
+    "img": "logo.png",
+    "star": 3,
+    "priceNew": 1000,
+    "priceOld": 1200,
+    "quantity": 12,
+    "hot": 1,
+    "description": "Day la mo ta san pham",
+    "categoryId": {
+      "$oid": "66ebbccaf0c70b7ed305d343"
+    },
+    "__v": 0
+  }
+]

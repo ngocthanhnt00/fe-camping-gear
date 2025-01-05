@@ -1,0 +1,629 @@
+<html>
+
+<head>
+	<style>
+		body {
+			font-size: 100%;
+		}
+	</style>
+	<style>
+		/*! CSS Used from: https://theme.hstatic.net/200000467803/1000988268/14/plugins-css.css?v=794 ; media=all */
+		@media all {
+			a {
+				background-color: transparent;
+			}
+
+			a:active,
+			a:hover {
+				outline: 0;
+			}
+
+			h1 {
+				margin: .67em 0;
+				font-size: 2em;
+			}
+
+			input {
+				margin: 0;
+				font: inherit;
+				color: inherit;
+			}
+
+			html input[type=button] {
+				-webkit-appearance: button;
+				cursor: pointer;
+			}
+
+			html input[disabled] {
+				cursor: default;
+			}
+
+			input {
+				line-height: normal;
+			}
+
+			input[type=radio] {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding: 0;
+			}
+
+			@media print {
+
+				*,
+				:before,
+				:after {
+					color: #000 !important;
+					text-shadow: none !important;
+					background: transparent !important;
+					-webkit-box-shadow: none !important;
+					box-shadow: none !important;
+				}
+
+				a,
+				a:visited {
+					text-decoration: underline;
+				}
+
+				a[href]:after {
+					content: " (" attr(href) ")";
+				}
+
+				p,
+				h3 {
+					orphans: 3;
+					widows: 3;
+				}
+
+				h3 {
+					page-break-after: avoid;
+				}
+
+				.label {
+					border: 1px solid #000;
+				}
+			}
+
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			:before,
+			:after {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			input {
+				font-family: inherit;
+				font-size: inherit;
+				line-height: inherit;
+			}
+
+			a {
+				color: #337ab7;
+				text-decoration: none;
+			}
+
+			a:hover,
+			a:focus {
+				color: #23527c;
+				text-decoration: underline;
+			}
+
+			a:focus {
+				outline: thin dotted;
+				outline: 5px auto -webkit-focus-ring-color;
+				outline-offset: -2px;
+			}
+
+			h1,
+			h3 {
+				font-family: inherit;
+				font-weight: 500;
+				line-height: 1.1;
+				color: inherit;
+			}
+
+			h1,
+			h3 {
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+
+			h1 {
+				font-size: 36px;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+
+			p {
+				margin: 0 0 10px;
+			}
+
+			ul {
+				margin-top: 0;
+				margin-bottom: 10px;
+			}
+
+			.list-unstyled {
+				padding-left: 0;
+				list-style: none;
+			}
+
+			.container {
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			@media (min-width:768px) {
+				.container {
+					width: 750px;
+				}
+			}
+
+			@media (min-width:992px) {
+				.container {
+					width: 970px;
+				}
+			}
+
+			@media (min-width:1200px) {
+				.container {
+					width: 1170px;
+				}
+			}
+
+			.row {
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+
+			.col-sm-3,
+			.col-sm-9,
+			.col-xs-12 {
+				position: relative;
+				min-height: 1px;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+			.col-xs-12 {
+				float: left;
+			}
+
+			.col-xs-12 {
+				width: 100%;
+			}
+
+			@media (min-width:768px) {
+
+				.col-sm-3,
+				.col-sm-9 {
+					float: left;
+				}
+
+				.col-sm-9 {
+					width: 75%;
+				}
+
+				.col-sm-3 {
+					width: 25%;
+				}
+			}
+
+			label {
+				display: inline-block;
+				max-width: 100%;
+				margin-bottom: 5px;
+				font-weight: 700;
+			}
+
+			input[type=radio] {
+				margin: 4px 0 0;
+				margin-top: 1px \9;
+				line-height: normal;
+			}
+
+			input[type=radio]:focus {
+				outline: thin dotted;
+				outline: 5px auto -webkit-focus-ring-color;
+				outline-offset: -2px;
+			}
+
+			.btn {
+				display: inline-block;
+				padding: 6px 12px;
+				margin-bottom: 0;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1.42857143;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: middle;
+				-ms-touch-action: manipulation;
+				touch-action: manipulation;
+				cursor: pointer;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				background-image: none;
+				border: 1px solid transparent;
+				border-radius: 4px;
+			}
+
+			.btn:focus,
+			.btn:active:focus {
+				outline: thin dotted;
+				outline: 5px auto -webkit-focus-ring-color;
+				outline-offset: -2px;
+			}
+
+			.btn:hover,
+			.btn:focus {
+				color: #333;
+				text-decoration: none;
+			}
+
+			.btn:active {
+				background-image: none;
+				outline: 0;
+				-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+				box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+			}
+
+			.label {
+				display: inline;
+				padding: .2em .6em .3em;
+				font-size: 75%;
+				font-weight: 700;
+				line-height: 1;
+				color: #fff;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: baseline;
+				border-radius: .25em;
+			}
+
+			.label:empty {
+				display: none;
+			}
+
+			.clearfix:before,
+			.clearfix:after,
+			.container:before,
+			.container:after,
+			.row:before,
+			.row:after {
+				display: table;
+				content: " ";
+			}
+
+			.clearfix:after,
+			.container:after,
+			.row:after {
+				clear: both;
+			}
+		}
+
+		/*! CSS Used from: https://theme.hstatic.net/200000467803/1000988268/14/styles.css?v=794 ; media=all */
+		@media all {
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			a {
+				color: #36393b;
+				transition: all 0.3s ease;
+			}
+
+			a:hover {
+				color: #51b848;
+				text-decoration: none;
+			}
+
+			input[type="text"] {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+			}
+
+			a:focus,
+			input:focus {
+				outline: none !important;
+				text-decoration: none;
+			}
+
+			h1,
+			h3 {
+				margin: 0;
+				color: #36393b;
+			}
+
+			.mt30 {
+				margin-top: 30px;
+			}
+
+			#page-wrap {
+				padding-top: 101px;
+				min-height: calc(100vh - 500px);
+			}
+
+			.AccountTitle {
+				text-transform: uppercase;
+				margin-bottom: 30px;
+				font-size: 15px;
+				font-weight: 700;
+				letter-spacing: 1px;
+				position: relative;
+				color: #383838;
+			}
+
+			.AccountList ul>li>a {
+				display: block;
+				position: relative;
+				padding: 5px 0px;
+				color: #252A2B;
+			}
+
+			.AccountList ul>li>a:hover {
+				color: #333d44;
+			}
+
+			#customer_sidebar p {
+				font-size: 14px;
+				overflow: hidden;
+			}
+
+			.title-detail {
+				text-transform: uppercase;
+				font-size: 15px;
+				font-weight: 700;
+				letter-spacing: 1px;
+				position: relative;
+				border-bottom: 1px solid #ededed;
+				padding-bottom: 8px;
+			}
+
+			#customer_orders {
+				margin-bottom: 30px;
+				margin-top: 30px;
+			}
+
+			.wrapbox-heading-account h1 {
+				text-align: center;
+				font-size: 20px;
+				font-weight: 600;
+				margin: 24px 0;
+			}
+
+			.large_form {
+				margin-bottom: 16px;
+			}
+
+			.action_bottom {
+				margin: 10px 0;
+			}
+
+			.action_bottom .btn {
+				width: 100%;
+				background: #51b848;
+				color: #fff;
+				margin-bottom: 10px;
+				border: 0;
+				line-height: 40px;
+				font-size: 16px;
+				font-weight: 500;
+				transition: all .5s;
+				border-radius: 26px;
+			}
+
+			@media (min-width: 1300px) {
+				.container {
+					width: 1200px;
+				}
+			}
+		}
+
+		/*! CSS Used from: Embedded */
+		p.title-detail {
+			margin-bottom: 20px !important;
+		}
+
+		form#update_customer input[type="text"] {
+			width: 40%;
+			height: 45px;
+			border: 1px solid transparent;
+			background: #ededed;
+			color: #221e20;
+			padding: 0 20px;
+			font-weight: 500;
+			-webkit-appearance: none;
+		}
+
+		form#update_customer .large_form {
+			margin-bottom: 18px;
+		}
+
+		form#update_customer #gender ul li {
+			display: inline;
+			margin-right: 20px;
+		}
+
+		#customer_sidebar form#update_customer label.label {
+			display: block;
+			color: #000 !important;
+			text-align: left;
+			font-size: 14px;
+			padding-left: 0px !important;
+			margin-bottom: 0px !important;
+			font-weight: initial;
+			width: 120px;
+			float: left;
+			line-height: 38px;
+		}
+
+		form#update_customer #gender ul li label {
+			font-weight: initial;
+		}
+
+		form#update_customer div {
+			display: block !important;
+			width: 100%;
+			clear: both;
+		}
+
+		form#update_customer #gender ul {
+			margin: 10px 0px 20px;
+			float: left;
+		}
+
+		form#update_customer .phone {
+			margin-bottom: 18px;
+		}
+
+		.layout-info-account .action_bottom {
+			max-width: 200px;
+		}
+
+		.layout-info-account .action_bottom .btn {
+			height: 35px;
+			line-height: 35px;
+			outline: 0;
+			margin-right: 5px;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 0 30px;
+			border: 0;
+			background: #66a55f;
+			color: #fff;
+			display: inline-block;
+			border-radius: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="page-wrap">
+		<div class="layout-info-account">
+			<div class="container mt30">
+				<div class="row bgfff">
+					<div class="col-xs-12 wrapbox-heading-account">
+						<div class="header-page clearfix">
+							<h1>Tài khoản của bạn</h1>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3 sidebar-account">
+						<div class="AccountSidebar">
+							<h3 class="AccountTitle titleSidebar">Tài khoản</h3>
+							<div class="AccountContent">
+								<div class="AccountList">
+									<ul class="list-unstyled">
+										<li class="current"><a href="/account">Thông tin tài khoản</a></li>
+										<li><a href="/account/addresses">Danh sách địa chỉ</a></li>
+
+										<li class="last"><a href="/account/logout">Đăng xuất</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-9">
+						<div class="row">
+							<div class="col-xs-12" id="customer_sidebar">
+								<p class="title-detail">Thông tin tài khoản</p>
+								<form accept-charset="UTF-8" action="/account" id="update_customer" method="post">
+									<input name="form_type" type="hidden" value="update_customer">
+									<input name="utf8" type="hidden" value="✓">
+
+
+
+									<div class="phone clearfix large_form">
+										<label class="label phone">Email</label>
+										<input autocomplete="false" type="text" value="ngocthanhnt04@gmail.com"
+											name="customer[email]" class="text email" disabled="" size="30"
+											style="cursor: not-allowed;">
+									</div>
+
+
+									<div class="phone clearfix large_form">
+										<label class="label phone">Số điện thoại</label>
+										<input autocomplete="false" type="text" value="0966483944"
+											name="customer[phone]" id="phone" class="text phone" size="30"
+											style="margin-bottom: 0;">
+									</div>
+
+
+									<div id="last_name" class="clearfix large_form">
+										<label for="birthday" class="label">Họ và tên đệm</label>
+										<input required="" type="text" value="Nguyễn Ngọc" name="customer[last_name]"
+											placeholder="Nguyễn Ngọc" id="last_name" class="text" size="30">
+									</div>
+									<div id="first_name" class="clearfix large_form">
+										<label for="birthday" class="label">Tên</label>
+										<input required="" type="text" value="Thanh" name="customer[first_name]"
+											placeholder="Thanh" id="first_name" class="text" size="30">
+									</div>
+									<div id="gender">
+										<label for="birthday" class="label">Giới tính</label>
+										<ul>
+											<li>
+												<input id="radio0" type="radio" value="0" name="customer[gender]">
+												<label for="radio0">Nữ</label>
+											</li>
+											<li>
+												<input id="radio1" type="radio" value="1" name="customer[gender]">
+												<label for="radio1">Nam</label>
+											</li>
+										</ul>
+									</div>
+									<div id="birthday" class="clearfix large_form">
+										<label for="birthday" class="label">Ngày sinh</label>
+										<input autocomplete="false" type="text" value="" id="datepicker"
+											placeholder="mm/dd/yyyy" name="customer[birthday]" class="text" size="30">
+									</div>
+									<div class="action_bottom">
+										<input type="button" class="btn updateAccount" value="Cập nhật">
+									</div>
+								</form>
+								<div class="clearfix"></div>
+
+							</div>
+							<div class="col-xs-12 customer-table-wrap" id="customer_orders">
+								<div class="customer_order customer-table-bg">
+									<p class="title-detail">
+										Danh sách đơn hàng mới nhất
+									</p>
+
+									<p>Bạn chưa đặt mua sản phẩm.</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "67659fe0a7747ff23a4469b1"
+  },
+  "displayname": "Thanh",
+  "email": "ngocthanhnt04@gmail.com",
+  "password": "$2a$10$aGjZ8vEg2VFGL/NBzHtMWe4g0Rj0oIG1UkVz10lGntbt9sDbVUyzy",
+  "role": 1,
+  "token_reset_password": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676784cce026d7e36374f612"
+  },
+  "displayname": "Test",
+  "email": "test@gmail.com",
+  "password": "$2a$10$0DKn1TlbaYFjAZsC2FBXNOlaSxhRiVHb.HC9Nhf/TI6DvocZwZfTq",
+  "role": 1,
+  "token_reset_password": null,
+  "__v": 0
+}]

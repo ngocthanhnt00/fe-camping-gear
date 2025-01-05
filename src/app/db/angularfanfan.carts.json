@@ -1,0 +1,361 @@
+[{
+  "_id": {
+    "$oid": "6702a4eb619d559902b1acbc"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "purchasedate": {
+    "$date": "2024-05-19T17:29:55.000Z"
+  },
+  "status": 1,
+  "paymentmethod": 1,
+  "totalprice": 1,
+  "retired": 1
+},
+{
+  "_id": {
+    "$oid": "6702a4eb619d559902b1acbd"
+  },
+  "userId": {
+    "$oid": "66eaff6fe3c715f4fe566e61"
+  },
+  "purchasedate": {
+    "$date": "2024-09-18T03:04:28.000Z"
+  },
+  "status": 0,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0
+},
+{
+  "_id": {
+    "$oid": "6702a4eb619d559902b1acbf"
+  },
+  "userId": {
+    "$oid": "6702a47cfc13ae4e324fde03"
+  },
+  "purchasedate": {
+    "$date": "2024-03-14T11:23:33.000Z"
+  },
+  "status": 4,
+  "paymentmethod": 4,
+  "totalprice": 4,
+  "retired": 4
+},
+{
+  "_id": {
+    "$oid": "6702a4eb619d559902b1acc0"
+  },
+  "userId": {
+    "$oid": "6702a47cfc13ae4e324fde04"
+  },
+  "purchasedate": {
+    "$date": "2023-10-15T15:20:23.000Z"
+  },
+  "status": 5,
+  "paymentmethod": 5,
+  "totalprice": 5,
+  "retired": 5
+},
+{
+  "_id": {
+    "$oid": "6702a4eb619d559902b1acc1"
+  },
+  "userId": {
+    "$oid": "6702a47cfc13ae4e324fde05"
+  },
+  "purchasedate": {
+    "$date": "2024-07-15T11:27:45.000Z"
+  },
+  "status": 6,
+  "paymentmethod": 6,
+  "totalprice": 6,
+  "retired": 6
+},
+{
+  "_id": {
+    "$oid": "6702a4eb619d559902b1acc2"
+  },
+  "userId": {
+    "$oid": "6702a47cfc13ae4e324fde06"
+  },
+  "purchasedate": {
+    "$date": "2023-11-06T13:06:09.000Z"
+  },
+  "status": 7,
+  "paymentmethod": 7,
+  "totalprice": 7,
+  "retired": 7
+},
+{
+  "_id": {
+    "$oid": "6702a4eb619d559902b1acc3"
+  },
+  "userId": {
+    "$oid": "6702a47cfc13ae4e324fde07"
+  },
+  "purchasedate": {
+    "$date": "2024-09-11T09:03:37.000Z"
+  },
+  "status": 8,
+  "paymentmethod": 8,
+  "totalprice": 8,
+  "retired": 8
+},
+{
+  "_id": {
+    "$oid": "6706a7d5f5bd0e41875c4687"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T15:57:09.216Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706a7f54f38f19f71ca760a"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T15:57:41.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706a82a4f38f19f71ca762d"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T15:58:34.751Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706a87ad4a0d4a6021a1434"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T15:59:54.795Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706b234c229e05f70ed509a"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T16:41:24.768Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706b6a65bff2e424b826eec"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:00:22.152Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706b7160abfbc9f9e064ad4"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:02:14.616Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706b74a133a6ed32b9f5ac3"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:03:06.670Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706b83fd7111509c91e88d1"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:07:11.437Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706b90dac9002f4976020ac"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:10:37.538Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706bb81545ab4ca208ee3f3"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:21:05.480Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706bbc3545ab4ca208ee3f9"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:22:11.144Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706bc21d35f1465cc3357c7"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:23:45.318Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706bc33d35f1465cc3357cd"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:24:03.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706bcdaa879ba4d1b203aa8"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:26:50.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6706bd6204dd1c57e315b27c"
+  },
+  "userId": {
+    "$oid": "66eaf7eae3c715f4fe566e54"
+  },
+  "status": 1,
+  "paymentmethod": 0,
+  "totalprice": 0,
+  "retired": 0,
+  "purchasedate": {
+    "$date": "2024-10-09T17:29:06.968Z"
+  },
+  "__v": 0
+}]

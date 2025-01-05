@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "6702aeaf619d559902b1acdf"
+  },
+  "cartId": {
+    "$oid": "6702a4eb619d559902b1ac1c"
+  },
+  "quantity": 3,
+  "productId": {
+    "$oid": "6702ae9dfc13ae4ee64fde05"
+  }
+},
+{
+  "_id": {
+    "$oid": "6702aeaf619d559902b1ace0"
+  },
+  "cartId": {
+    "$oid": "6702ae9dfc13ae4ee64fde06"
+  },
+  "quantity": 4,
+  "productId": {
+    "$oid": "6702ae9dfc13ae4ee64fde07"
+  }
+},
+{
+  "_id": {
+    "$oid": "6702aeaf619d559902b1ace1"
+  },
+  "cartId": {
+    "$oid": "6702ae9dfc13ae4ee64fde08"
+  },
+  "quantity": 5,
+  "productId": {
+    "$oid": "6702ae9dfc13ae4ee64fde09"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a2cc5ed1b714b81a342f1"
+  },
+  "cartId": {
+    "$oid": "6702a4eb619d559902b1acbd"
+  },
+  "quantity": 1,
+  "productId": {
+    "$oid": "66a526748daf01340414016b"
+  },
+  "retired": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670c06fe3e8e02c5a3745aa8"
+  },
+  "cartId": {
+    "$oid": "6702a4eb619d559902b1acbc"
+  },
+  "quantity": 1,
+  "productId": {
+    "$oid": "66a524a48daf013404140164"
+  },
+  "retired": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "671099f43c2c48c622dbc8cc"
+  },
+  "cartId": {
+    "$oid": "6702a4eb619d559902b1acbc"
+  },
+  "quantity": 1,
+  "productId": {
+    "$oid": "66a524a48daf013404140164"
+  },
+  "retired": 0,
+  "__v": 0
+}]

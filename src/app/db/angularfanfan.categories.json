@@ -1,0 +1,82 @@
+[{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d340"
+  },
+  "name": "Cắm trại - leo núi",
+  "description": "Các sản phẩm phục vụ cho hoạt động phượt bằng xe máy",
+  "icon": "iconleu.webp"
+},
+{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d341"
+  },
+  "name": "Đồ phượt xe máy xe đạp",
+  "description": "Các sản phẩm phục vụ cho hoạt động phượt bằng xe máy",
+  "icon": "iconbike.webp"
+},
+{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d342"
+  },
+  "name": "Trang phục dã ngoại",
+  "description": "Các loại trang phục phù hợp cho hoạt động dã ngoại",
+  "icon": "iconAoKhoac.webp"
+},
+{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d343"
+  },
+  "name": "Giày dép",
+  "description": "Các loại giày dép phù hợp cho hoạt động dã ngoại",
+  "icon": "icongiay.webp"
+},
+{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d344"
+  },
+  "name": "Balo & Túi du lịch",
+  "description": "Các loại balo và túi dùng cho hoạt động du lịch, cắm trại",
+  "icon": "iconbalo.webp"
+},
+{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d345"
+  },
+  "name": "Điện tử - Công nghệ",
+  "description": "Các loại trang phục phù hợp cho hoạt động dã ngoại",
+  "icon": "icondenpin.webp"
+},
+{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d346"
+  },
+  "name": "Dao và dụng cụ",
+  "description": "Các sản phẩm phục vụ cho hoạt động thể thao dưới nước",
+  "icon": "icondao.webp"
+},
+{
+  "_id": {
+    "$oid": "66ebbccaf0c70b7ed305d347"
+  },
+  "name": "Thể thao dưới nước",
+  "description": "Các sản phẩm phục vụ cho hoạt động thể thao dưới nước",
+  "icon": "iconthethaonuoc.webp"
+},
+{
+  "_id": {
+    "$oid": "66efe9a920ba8df9aae3776d"
+  },
+  "name": "dasdas",
+  "description": "dsadsadas",
+  "icon": "DSC08787.jpg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f05a0620ba8df9aae37822"
+  },
+  "name": "dsadasdsssssssss",
+  "description": "Mệt quá LLsadsasdasaaaaa",
+  "icon": "z4687992302122_e396ed3322952012407f7822d4fa40b1.jpg",
+  "__v": 0
+}]
