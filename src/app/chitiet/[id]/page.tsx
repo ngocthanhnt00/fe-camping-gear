@@ -1444,7 +1444,6 @@ export default function DetailPage() {
                         className="box_qty clearfix"
                         data-price=""
                         data-id=""
-                        onClick={(event) => clickUpdateQuantiy(event)}
                       >
                         <input
                           type="button"
@@ -1458,7 +1457,6 @@ export default function DetailPage() {
                           value="1"
                           min="1"
                           className="quantity-selector"
-                          onChange={(event) => handleInput(event.target, 1)}
                         />
                         <input
                           type="button"
