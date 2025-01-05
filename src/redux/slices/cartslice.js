@@ -11,7 +11,7 @@ if (typeof window !== 'undefined') {
     user = localStorage.getItem("user") || ''; // Lấy user từ localStorage
     userId = user ? JSON.parse(user)._id : ''; // Giả sử user có thuộc tính id chứa userId
 }
-    
+
 const cartSlice = createSlice({
     name: "cart",
     initialState: {
@@ -20,6 +20,12 @@ const cartSlice = createSlice({
         // ...other initial state properties
     },
     reducers: {
+        setCart: (state, action) => {
+            state.items = action.payload;
+            if (typeof window !== 'undefined') {
+                localStorage.setItem("cart", JSON.stringify(state.items)); // Cập nhật localStorage
+            }
+        },
         addItem: (state, action) => {
             state.items.push(action.payload);
             if (typeof window !== 'undefined') {
