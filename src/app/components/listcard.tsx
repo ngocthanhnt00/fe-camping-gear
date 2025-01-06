@@ -162,7 +162,7 @@ export default function ListCard(props: {
           <button
             className="next3"
             onClick={handleNext}
-            disabled={containerRef.current && position <= -(props.products.length * (containerRef.current.offsetWidth / 4) - containerRef.current.offsetWidth)}
+            disabled={Boolean(containerRef.current && position <= -(props.products.length * (containerRef.current.offsetWidth / 4) - containerRef.current.offsetWidth))}
           >
             &gt;
           </button>
