@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import bcryptjs from "bcryptjs";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import ENV_VARS from "@/config";
 
 const RegisterForm = async () => {
   const validationSchema = Yup.object().shape({
@@ -42,14 +43,11 @@ const RegisterForm = async () => {
       //     alert("Email đã tồn tại");
       //     return;
       //   }
-      const res = await fetch(
-        "https://be-camping-gear.vercel.app/auth/register",
-        {
-          method: "POST",
-          headers: { "Content-type": "application/json" },
-          body: JSON.stringify(data),
-        }
-      );
+      const res = await fetch(`${ENV_VARS.NEXT_PUBLIC_URL}/auth/register`, {
+        method: "POST",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify(data),
+      });
       console.log(res, "ressssss");
       if (res.status == 200) {
         alert("Đăng ký thành công");

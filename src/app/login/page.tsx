@@ -4,8 +4,12 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../components/authContext";
 import bcryptjs from "bcryptjs";
+import ENV_VARS from "@/config.js";
+import { useDispatch } from "react-redux";
+import { fetchCart } from "@/redux/slices/cartslice";
 
 export default function Login() {
+  const dispatch = useDispatch();
   const router = useRouter();
   const { setUser } = useAuth();
   const [email, setEmail] = useState("ngocthanhnt04@gmail.com");
@@ -15,15 +19,12 @@ export default function Login() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const data = { email, password };
-    const response = await fetch(
-      "https://be-camping-gear.vercel.app/auth/login",
-      {
-        method: "POST",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify(data),
-        credentials: "include",
-      }
-    );
+    const response = await fetch(`${ENV_VARS.NEXT_PUBLIC_URL}/auth/login`, {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(data),
+      credentials: "include",
+    });
     const res = await response.json();
     const token = res.token;
     const user = res.user;
@@ -32,8 +33,10 @@ export default function Login() {
       localStorage.setItem("user", JSON.stringify(user));
       document.cookie = `token=${token}`;
       setUser(user);
+      dispatch(fetchCart(user._id) as any);
       alert("Đăng nhập thành công");
       router.push("/");
+      // window.location.href = "/";
     } else {
       setError(res.message || "Đăng nhập thất bại");
     }

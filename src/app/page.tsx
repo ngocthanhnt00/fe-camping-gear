@@ -1,12 +1,11 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import { AuthProvider } from "./components/authContext"; // Adjust the path as necessary
 import Header from "./components/header"; // Import your Header component
 import ListCard from "./components/listcard";
 import Link from "next/link";
 import Image from "next/image";
-
+import ENV_VARS from "../config.js";
 // Define the type for category items
 interface Category {
   _id: string;
@@ -25,19 +24,16 @@ const App = () => {
 
   useEffect(() => {
     const fetchCategories = async () => {
-      const response = await fetch(
-        "https://be-camping-gear.vercel.app/category"
-      );
+      const response = await fetch(`${ENV_VARS.NEXT_PUBLIC_URL}/category`);
       const data = await response.json();
       setCategories(data);
     };
 
     const fetchProducts = async () => {
-      const response = await fetch(
-        "https://be-camping-gear.vercel.app/products"
-      );
+      const response = await fetch(`${ENV_VARS.NEXT_PUBLIC_URL}/products`);
       const data = await response.json();
       setProducts(data);
+      console.log(ENV_VARS.NEXT_PUBLIC_URL, "ENV_VARS.PORT_BE");
     };
 
     fetchCategories();
@@ -52,11 +48,12 @@ const App = () => {
           <div className="slider">
             <div className="list">
               {[
-                "https://be-camping-gear.vercel.app/images/bannerheading.webp",
-                "https://be-camping-gear.vercel.app/images/bannerheading1.webp",
-                "https://be-camping-gear.vercel.app/images/bannerheading3.webp",
-                "https://be-camping-gear.vercel.app/images/bannerheading4.webp",
-                "https://be-camping-gear.vercel.app/images/bannerheading5.webp",
+                `${ENV_VARS.NEXT_PUBLIC_URL}/images/bannerheading.webp`,
+                `${ENV_VARS.NEXT_PUBLIC_URL}/images/bannerheading.webp`,
+                `${ENV_VARS.NEXT_PUBLIC_URL}/images/bannerheading1.webp`,
+                `${ENV_VARS.NEXT_PUBLIC_URL}/images/bannerheading3.webp`,
+                `${ENV_VARS.NEXT_PUBLIC_URL}/images/bannerheading4.webp`,
+                `${ENV_VARS.NEXT_PUBLIC_URL}/images/bannerheading5.webp`,
               ].map((src, index) => (
                 <div className="item" key={index}>
                   <img
@@ -85,7 +82,7 @@ const App = () => {
                 <li className="has-child" key={index}>
                   <Link href={`danhmuc/${item._id}`} title={item.name}>
                     <img
-                      src={`https://be-camping-gear.vercel.app/images/${item.icon}`}
+                      src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/${item.icon}`}
                       alt={item.name}
                       width={500}
                       height={500}

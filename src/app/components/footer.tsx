@@ -1,3 +1,4 @@
+import ENV_VARS from "@/config";
 import Link from "next/link";
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
               <div className="store-item">
                 <Link href="">
                   <img
-                    src="https://be-camping-gear.vercel.app/images/cuahang1.jpg"
+                    src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/cuahang1.jpg`}
                     alt="FanFan Tân Sơn Nhất"
                   />
                   <div className="title-store">
@@ -25,7 +26,7 @@ export default function Footer() {
               <div className="store-item">
                 <Link href="">
                   <img
-                    src="https://be-camping-gear.vercel.app/images/cuahang2.webp"
+                    src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/cuahang2.webp`}
                     alt="FanFan Quận 1"
                   />
                   <div className="title-store">
@@ -40,7 +41,7 @@ export default function Footer() {
               <div className="store-item">
                 <Link href="">
                   <img
-                    src="https://be-camping-gear.vercel.app/images/cuahang3.jpg"
+                    src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/cuahang3.jpg`}
                     alt="FanFan Hà Nội"
                   />
                   <div className="title-store">

@@ -1,3 +1,4 @@
+import ENV_VARS from "@/config";
 import Link from "next/link";
 
 export default function productLoop(props: { data: any[] }) {
@@ -13,14 +14,14 @@ export default function productLoop(props: { data: any[] }) {
               >
                 <img
                   className=" lazyloaded"
-                  src={`https://be-camping-gear.vercel.app/images/${product.img}`}
+                  src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/${product.img}`}
                   data-src={product.img}
                   alt={product.name}
                 />
                 <img
                   className="hover lazyloaded"
-                  src={`https://be-camping-gear.vercel.app/images/${product.img}`}
-                  data-src={`https://be-camping-gear.vercel.app/images/${product.img}`}
+                  src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/${product.img}`}
+                  data-src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/${product.img}`}
                   alt={product.name}
                 />
               </Link>

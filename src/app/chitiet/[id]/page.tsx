@@ -3,6 +3,7 @@ import { useParams } from "next/navigation";
 import useSWR from "swr";
 import "./detail.css";
 import Link from "next/link";
+import ENV_VARS from "@/config";
 export default function DetailPage() {
   const params = useParams();
   const images = [
@@ -47,7 +48,7 @@ export default function DetailPage() {
   // ];
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data, error } = useSWR(
-    `https://be-camping-gear.vercel.app/products/${params.id}`,
+    `${ENV_VARS.NEXT_PUBLIC_URL}/products/${params.id}`,
     fetcher,
     {
       refreshInterval: 6000,
@@ -132,7 +133,7 @@ export default function DetailPage() {
                             >
                               <img
                                 alt="Ba lô xếp gọn 18L Naturehike NH17A012-B"
-                                src={`https://be-camping-gear.vercel.app/images/${product.img}`}
+                                src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/${product.img}`}
                               />
                             </Link>
                           </div>

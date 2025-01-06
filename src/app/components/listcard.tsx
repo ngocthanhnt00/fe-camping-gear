@@ -1,19 +1,24 @@
 import Link from "next/link";
-
-import { useDispatch } from "react-redux"; // Thêm import useDispatch
-import { addToCartAPI } from "../../redux/slices/cartslice"; // Thêm import addToCartAPI
+import { useRouter } from "next/navigation";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCartAPI } from "../../redux/slices/cartslice";
+import ENV_VARS from "../../config.js";
 
 export default function ListCard(props: {
   title: string;
   products: any[];
   id: number | string;
 }) {
-  const dispatch = useDispatch(); // Khởi tạo dispatch
-
+  const router = useRouter();
+  const dispatch = useDispatch();
+  const userId = useSelector((state: any) => state.cart.userId);
+  console.log(userId, "UserID");
   const handleAddToCart = (productId: any, quantity: any) => {
-    const user = localStorage.getItem("user");
-    const userId = user ? JSON.parse(user)._id : "";
-    dispatch(addToCartAPI(userId, productId, quantity) as any); // Gọi action thêm sản phẩm vào giỏ hàng
+    if (!userId) {
+      window.location.href = "/login";
+      return;
+    }
+    dispatch(addToCartAPI(userId, productId, quantity) as any);
   };
 
   return (
@@ -23,11 +28,11 @@ export default function ListCard(props: {
         <div className={`cart${props.id}`}>
           <div className={`list-products${props.id}`}>
             {props.products.map((product, index) => (
-              <div className={`product${props.id}`}>
-                <Link href={`/chitiet/${product._id}`} key={index}>
+              <div className={`product${props.id}`} key={index}>
+                <Link href={`/chitiet/${product._id}`}>
                   <div className="image-product">
                     <img
-                      src={`https://be-camping-gear.vercel.app/images/${product.img}`}
+                      src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/${product.img}`}
                       alt={product.name}
                     />
                   </div>

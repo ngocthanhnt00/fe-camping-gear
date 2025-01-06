@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import useSWR from "swr";
 import "./danhmuc.css";
 import ProductLoop from "@/app/components/productLoop";
+import ENV_VARS from "@/config";
 export default function Category() {
   const [sort, setSort] = useState("asc");
   const [maxPrice, setMaxPrice] = useState(6000000);
@@ -12,7 +13,7 @@ export default function Category() {
 
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data, error } = useSWR(
-    `https://be-camping-gear.vercel.app/products?idcate=${params.id}`,
+    `${ENV_VARS.NEXT_PUBLIC_URL}/products?idcate=${params.id}`,
     fetcher,
     {
       refreshInterval: 6000,

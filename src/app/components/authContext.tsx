@@ -1,16 +1,21 @@
 "use client";
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import cartSlice from "@/redux/slices/cartslice";
 
 // Define the shape of the user object
 interface User {
   displayname: string;
   avatar?: string;
+  _id: string;
 }
 
 // Define the shape of the context value
 interface AuthContextType {
   user: User | null;
-  setUser: React.Dispatch<React.SetStateAction<User | null>>;
+  login: (userData: User) => void;
+  logout: () => void;
+  setUser: (user: User | null) => void;
 }
 
 // Create the AuthContext
@@ -21,17 +26,32 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [user, setUser] = useState<User | null>(null);
+  const dispatch = useDispatch();
 
   // Load user from local storage if available
-  React.useEffect(() => {
+  useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
-      setUser(JSON.parse(storedUser));
+      const parsedUser = JSON.parse(storedUser);
+      setUser(parsedUser);
+      dispatch(cartSlice.actions.setUserId(parsedUser._id));
     }
-  }, []);
+  }, [dispatch]);
+
+  const login = (userData: User) => {
+    setUser(userData);
+    localStorage.setItem("user", JSON.stringify(userData));
+    dispatch(cartSlice.actions.setUserId(userData?._id));
+  };
+
+  const logout = () => {
+    setUser(null);
+    localStorage.removeItem("user");
+    dispatch(cartSlice.actions.setUserId(null));
+  };
 
   return (
-    <AuthContext.Provider value={{ user, setUser }}>
+    <AuthContext.Provider value={{ user, login, logout, setUser }}>
       {children}
     </AuthContext.Provider>
   );

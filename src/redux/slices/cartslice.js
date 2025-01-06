@@ -1,3 +1,4 @@
+import ENV_VARS from "@/config";
 import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -6,9 +7,16 @@ let user = '';
 let userId = '';
 
 if (typeof window !== 'undefined') {
-    // Đọc giỏ hàng từ localStorage
-    savedCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    try {
+        const cartData = localStorage.getItem("cart");
+        savedCart = cartData ? JSON.parse(cartData) : [];
+        if (!Array.isArray(savedCart)) savedCart = [];
+    } catch (e) {
+        console.error("Error loading cart from localStorage:", e);
+        savedCart = [];
+    }
     user = localStorage.getItem("user") || ''; // Lấy user từ localStorage
+    console.error("User", user);
     userId = user ? JSON.parse(user)._id : ''; // Giả sử user có thuộc tính id chứa userId
 }
 
@@ -23,7 +31,7 @@ const cartSlice = createSlice({
         setCart: (state, action) => {
             state.items = action.payload;
             if (typeof window !== 'undefined') {
-                localStorage.setItem("cart", JSON.stringify(state.items)); // Cập nhật localStorage
+                localStorage.setItem("cart", JSON.stringify(action.payload));
             }
         },
         addItem: (state, action) => {
@@ -44,6 +52,9 @@ const cartSlice = createSlice({
                 localStorage.setItem("cart", JSON.stringify(state.items)); // Xóa localStorage
             }
         },
+        setUserId: (state, action) => {
+            state.userId = action.payload; // Cập nhật userId
+        },
     },
 });
 
@@ -51,7 +62,7 @@ const cartSlice = createSlice({
 // Thêm các action để gọi API
 export const fetchCart = (userId) => async (dispatch) => {
     try {
-        const response = await axios.get(`https://be-camping-gear.vercel.app/cart/${userId}`);
+        const response = await axios.get(`${ENV_VARS.NEXT_PUBLIC_URL}/cart/${userId}`);
         const data = response.data.result;
         const filterProduct = data.map((item, index) => {
             return { ...item.productId, qty: item.quantity }
@@ -65,7 +76,7 @@ export const fetchCart = (userId) => async (dispatch) => {
 
 export const addToCartAPI = (userId, productId, quantity) => async (dispatch) => {
     try {
-        const response = await axios.post("https://be-camping-gear.vercel.app/cart/create", {
+        const response = await axios.post(`${ENV_VARS.NEXT_PUBLIC_URL}/cart/create`, {
             userId,
             productId,
             qty: quantity,
@@ -79,12 +90,28 @@ export const addToCartAPI = (userId, productId, quantity) => async (dispatch) =>
     }
 };
 
-export const removeFromCartAPI = (productId) => async (dispatch) => {
+export const removeFromCartAPI = (productId) => async (dispatch, getState) => {
+    const userId = getState().cart.userId;
     try {
-        const response = await axios.delete(`https://be-camping-gear.vercel.app/cart/delete/${productId}`, {
-            data: { userId: userId }, // Sử dụng userID từ localStorage
+        const response = await axios.post(`${ENV_VARS.NEXT_PUBLIC_URL}/cart/delete/${productId}`, {
+            data: { userId: userId }, // Sử dụng userID từ state
         });
         dispatch(fetchCart(userId));
+    } catch (error) {
+        console.error("Lỗi khi xóa sản phẩm khỏi giỏ hàng:", error);
+    }
+};
+
+export const signOutUser = () => async (dispatch, getState) => {
+    const userId = getState().cart.userId;
+    try {
+        const response = await axios.post(`${ENV_VARS.NEXT_PUBLIC_URL}/auth/signout`, {
+            data: { userId: userId },
+        });
+        if (response && response.status === 200) {
+            dispatch(clearCart());
+            alert("Đăng xuất thành công");
+        }
     } catch (error) {
         console.error("Lỗi khi xóa sản phẩm khỏi giỏ hàng:", error);
     }

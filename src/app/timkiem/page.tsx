@@ -5,11 +5,12 @@ import ListCard from "../components/listcard";
 import { SearchContext } from "../components/searchContext";
 import ProductLoop from "../components/productLoop";
 import "./timkiem.css";
+import ENV_VARS from "@/config";
 export default function SearchPage() {
   const { keyword } = useContext(SearchContext);
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data, error } = useSWR(
-    `https://be-camping-gear.vercel.app/products`,
+    `${ENV_VARS.NEXT_PUBLIC_URL}/products`,
     fetcher,
     {
       refreshInterval: 6000,

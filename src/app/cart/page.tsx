@@ -8,6 +8,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFromCartAPI } from "@/redux/slices/cartslice";
+import ENV_VARS from "@/config.js";
 
 export default function Cart() {
   const dispatch = useDispatch();
@@ -46,7 +47,7 @@ export default function Cart() {
                     className="w-5 h-5 mr-4 text-green-500 border-gray-300 rounded"
                   />
                   <img
-                    src={`https://be-camping-gear.vercel.app/images/${item.img}`}
+                    src={`${ENV_VARS.NEXT_PUBLIC_URL}/images/${item.img}`}
                     alt="Sản phẩm"
                     className="w-20 h-20 rounded-lg object-cover border"
                   />
