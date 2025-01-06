@@ -35,9 +35,17 @@ const App = () => {
       setProducts(data);
       console.log(ENV_VARS.NEXT_PUBLIC_URL, "ENV_VARS.PORT_BE");
     };
+    const fetchProductsHot = async () => {
+      const response = await fetch(
+        `${ENV_VARS.NEXT_PUBLIC_URL}/products?hot=1`
+      );
+      const data = await response.json();
+      setProductsHot(data);
+    };
 
     fetchCategories();
     fetchProducts();
+    fetchProductsHot();
   }, []);
 
   return (

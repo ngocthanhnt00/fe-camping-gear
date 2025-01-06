@@ -17,6 +17,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
+    "slick-carousel": "^1.8.1",
     "swr": "^2.2.5",
     "yup": "^1.6.1"
   },
@@ -26,6 +27,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/react-slick": "^0.23.13",
     "@types/yup": "^0.29.14",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",

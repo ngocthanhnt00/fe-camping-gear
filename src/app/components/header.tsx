@@ -10,12 +10,12 @@ import { signOutUser } from "@/redux/slices/cartslice";
 
 export default function Header() {
   const dispatch = useDispatch();
-  const cartItems = useSelector((state: any) => state.cart.items) || []; // ✅ Đảm bảo giá trị mặc định là []
-  const [cartCount, setCartCount] = useState(0); // ✅ Dùng useState để xử lý hydration error
+  const cartItems = useSelector((state: any) => state.cart.items) || [];
+  const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
     const total = cartItems.reduce(
-      (count: number, item: any) => count + (Number(item?.qty) || 0), // ✅ Kiểm tra `item?.qty`
+      (count: number, item: any) => count + (Number(item?.qty) || 0),
       0
     );
     setCartCount(total);

@@ -93,7 +93,7 @@ export const addToCartAPI = (userId, productId, quantity) => async (dispatch) =>
 export const removeFromCartAPI = (productId) => async (dispatch, getState) => {
     const userId = getState().cart.userId;
     try {
-        const response = await axios.post(`${ENV_VARS.NEXT_PUBLIC_URL}/cart/delete/${productId}`, {
+        const response = await axios.delete(`${ENV_VARS.NEXT_PUBLIC_URL}/cart/delete/${productId}`, {
             data: { userId: userId }, // Sử dụng userID từ state
         });
         dispatch(fetchCart(userId));
